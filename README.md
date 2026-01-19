@@ -85,7 +85,7 @@ ollama pull llama3
 ```bash
 ollama run llama3
 ```
-If it generates replies, Ollama is running correctly at `http://localhost:11434`.
+If it generates replies, Ollama is running correctly at `http://localhos.
 
 ---
 
@@ -188,7 +188,7 @@ ollama pull llama3
 python app.py
 
 # Step 5: Visit in browser
-http://127.0.0.1:5000/
+http:
 ```
 
 ---
@@ -198,7 +198,7 @@ http://127.0.0.1:5000/
 - **Bot Reply (English):** “That’s great! Keep that smile on.”  
 - **Bot Reply (Tamil):** “அது அருமை! உன் முகத்தில் அந்த புன்னகையை வைத்துக்கொள்.”  
 - **Voice Output:** Generated using Edge TTS  
-- **Log File:** `session_logs/session_1729638450.json`
+- **Log File:** 
 
 ---
 
