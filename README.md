@@ -111,11 +111,11 @@ python app.py
 
 Once you see:
 ```
-🚀 Server running: http://127.0.0.1:5000/
+🚀 Server running: 
 ```
 
 Open your browser and visit:  
-👉 [http://127.0.0.1:5000/](http://127.0.0.1:5000/)
+
 
 Allow camera access when prompted.
 
