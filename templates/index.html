@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>AI-BASED MENTAL HEALTH CHATBOT</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="/static/css/style.css" />
+  <!-- Chart.js simple bar -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <header class="app-header">
+    <h1>AI MENTAL HEALTH CHATBOT</h1>
+    <p class="subtitle">I'll be there for you..</p>
+  </header>
+
+  <main class="grid">
+    <section class="card left-card">
+      <h2>You look the best today!</h2>
+      <div class="video-wrap">
+        <video id="camera" autoplay playsinline muted></video>
+        <canvas id="frame" width="640" height="480" class="hidden"></canvas>
+      </div>
+
+      <div class="status-card">
+        <h3 id="currentMood">--</h3>
+        <div class="bar-wrap">
+          <div class="progress" id="progBar"></div>
+        </div>
+        <div class="conf-text">Confidence: <span id="emoConf">--</span></div>
+      </div>
+
+      <div class="chart-wrap">
+        <canvas id="emotionChart" height="120"></canvas>
+      </div>
+    </section>
+
+    <section class="card chat-section">
+      <h2>Wassup... Tell me whatchu thinking..</h2>
+      <div id="chatBox" class="chatbox">
+        <div class="msg bot">Hello! Please allow webcam access to begin.</div>
+      </div>
+
+      <div class="input-wrap">
+        <input id="userInput" type="text" placeholder="Type or speak your message..." />
+        <button id="langToggle" class="btn small">EN</button>
+        <button id="micBtn" class="btn small" title="Speak">Mic</button>
+        <button id="sendBtn" class="btn primary">Send</button>
+      </div>
+
+      <div class="bottom-row">
+        <div id="moodSummary" class="muted small">No mood summary yet.</div>
+        <audio id="botAudio" style="display:none"></audio>
+      </div>
+    </section>
+  </main>
+
+  <div id="crisisModal" class="modal hidden">
+    <div class="modal-card">
+      <h3>Crisis Alert</h3>
+      <p>It seems you've been feeling distressed for a while. Please know that help is available.</p>
+      <p><strong>Tamil Nadu Helpline:</strong> 104</p>
+      <p><strong>National Helpline:</strong> 1800-599-0019</p>
+      <div class="modal-actions">
+        <a href="tel:104" class="btn danger">Call Now</a>
+        <button id="okCrisis" class="btn">I'm Okay</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="/static/js/script.js"></script>
+</body>
+</html>

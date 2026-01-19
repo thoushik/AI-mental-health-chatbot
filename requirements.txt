@@ -1,0 +1,17 @@
+<<<<<<< HEAD
+flask==3.0.3
+opencv-python==4.10.0.84
+deepface==0.0.93
+numpy==1.26.4
+requests==2.32.3
+edge-tts==6.1.12
+asyncio==3.4.3
+=======
+flask==3.0.3
+opencv-python==4.10.0.84
+deepface==0.0.93
+numpy==1.26.4
+requests==2.32.3
+edge-tts==6.1.12
+asyncio==3.4.3
+>>>>>>> 0bb02401fafb56ebe823df1c028f8295430c5fbd
